@@ -1,10 +1,10 @@
 ### Usage
 
-java -jar SpanQueryCLI.jar fieldName query
+java -jar classes/artifacts/SpanSearchCLI_jar/SpanSearchCLI.jar fieldName query
 
 #### sample
 
-java -jar SpanQueryCLI.jar 'content' 'love /5 hate'
+java -jar classes/artifacts/SpanSearchCLI_jar/SpanSearchCLI.jar 'content' 'love /5 hate'
 
 #### Example Queries
 
