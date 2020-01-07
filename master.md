@@ -1,6 +1,10 @@
 ### Usage
 
-java -jar SpanQueryCLI.jar /<fieldName/> /<query/>
+java -jar SpanQueryCLI.jar fieldName query
+
+#### sample
+
+java -jar SpanQueryCLI.jar 'content' 'love /5 hate'
 
 #### Example Queries
 
