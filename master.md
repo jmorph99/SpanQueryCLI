@@ -1,6 +1,6 @@
 ### Usage
 
-java -jar SpanQueryCLI.jar <fieldName> <query>
+java -jar SpanQueryCLI.jar /<fieldName/> /<query/>
 
 #### Example Queries
 
