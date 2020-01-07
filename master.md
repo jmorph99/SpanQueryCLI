@@ -8,8 +8,6 @@ java -jar SpanQueryCLI.jar 'content' 'love /5 hate'
 
 #### Example Queries
 
-Sample Queries
-
 (can could) /12 "figur*" - Can or Could within 12 of firgure*
 
 (search*) /75 (could* /10 "lat* night")
