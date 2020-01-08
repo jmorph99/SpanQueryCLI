@@ -12,7 +12,7 @@ A B "C D" - A OR B OR phrase "C D"\
 (A B) /5 "C D" - (A OR B) within 5 of phrase "C D"\
 A B /5 "C D" - A OR (B with 5 of phrase "C D")\
 A B* - A OR B wildcard\
-"A B"  - phrase "A B wildcard"\
+"A B"  - phrase "A B wildcard" \
 
 #### Example Queries
 <pre>
