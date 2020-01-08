@@ -58,13 +58,14 @@ public class QueryDiagram {
         if(sq.getClass().toString().equals("class org.apache.lucene.search.spans.SpanTermQuery")){
             SpanTermQuery soq = (SpanTermQuery)sq;
             printLevel(level);
-            if(soq.getTerm().text().contains("*"))
+            if(soq.getTerm().text().endsWith("*"))
             {
-                sb.append("\"span_multi\": { \"match\": { \"wildcard\" : {\""
+                sb.append("\"span_multi\": { \"match\": { \"prefix\" : {\""
                         + soq.getField()
-                        + "\" : \""
-                        + soq.getTerm().text()
-                        + "\"}}}" );
+                        + "\" :{ \"value\":\""
+                        + soq.getTerm().text().substring(0,soq.getTerm().text().length() - 1)
+                        + "\", \"rewrite\": \"constant_score_boolean\""
+                        + "}}}}" );
             }
             else
             {
