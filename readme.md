@@ -45,7 +45,7 @@ out
   ] , "slop": 0,"in_order":true}}}
 
 in
-java -jar classes/artifacts/SpanSearchCLI_jar/SpanSearchCLI.jar 'content' '"(can might) expect*"'10
+java -jar classes/artifacts/SpanSearchCLI_jar/SpanSearchCLI.jar 'content' '"(can might) expect*"'
 out
 { "query":{
   "span_near": { "clauses": [{
