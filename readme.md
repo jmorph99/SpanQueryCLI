@@ -7,12 +7,12 @@ java -jar classes/artifacts/SpanSearchCLI_jar/SpanSearchCLI.jar fieldName query
 java -jar classes/artifacts/SpanSearchCLI_jar/SpanSearchCLI.jar 'content' 'love /5 hate'
 
 #### Query Rules
-A B C - A OR B OR C
-A B "C D" - A OR B OR phrase "C D"
-(A B) /5 "C D" - (A OR B) within 5 of phrase "C D"
-A B /5 "C D" - A OR (B with 5 of phrase "C D")
-A B* - A OR B wildcard
-"A B"  - phrase "A B wildcard"
+A B C - A OR B OR C\
+A B "C D" - A OR B OR phrase "C D"\
+(A B) /5 "C D" - (A OR B) within 5 of phrase "C D"\
+A B /5 "C D" - A OR (B with 5 of phrase "C D")\
+A B* - A OR B wildcard\
+"A B"  - phrase "A B wildcard"\
 
 #### Example Queries
 <pre>
