@@ -7,18 +7,18 @@ java -jar classes/artifacts/SpanSearchCLI_jar/SpanSearchCLI.jar fieldName query
 java -jar classes/artifacts/SpanSearchCLI_jar/SpanSearchCLI.jar 'content' 'love /5 hate'
 
 #### Example Queries
-in
-java -jar classes/artifacts/SpanSearchCLI_jar/SpanSearchCLI.jar 'content' '(can could) /12 "figur*"'
-out
-{ "query":{
-  "span_near": { "clauses": [{
-    "span_or": { "clauses": [{
-      "span_term" : {"content":"can"}      },{
-      "span_term" : {"content":"could"}      }
-    ]}},{
-    "span_multi": { "match": { "prefix" : {"content" :{ "value":"figur", "rewrite": "constant_score_boolean"}}}}    }
-  ] , "slop": 12,"in_order":false}}}
-
+in\
+java -jar classes/artifacts/SpanSearchCLI_jar/SpanSearchCLI.jar 'content' '(can could) /12 "figur*"'\
+out\
+{ "query":{\
+  "span_near": { "clauses": [{\
+    "span_or": { "clauses": [{\
+      "span_term" : {"content":"can"}      },{\
+      "span_term" : {"content":"could"}      }\
+    ]}},{\
+    "span_multi": { "match": { "prefix" : {"content" :{ "value":"figur", "rewrite": "constant_score_boolean"}}}}    }\
+  ] , "slop": 12,"in_order":false}}}\
+\
 in
 java -jar classes/artifacts/SpanSearchCLI_jar/SpanSearchCLI.jar 'content' '(search*) /75 (could* /10 "lat* night")'
 out
